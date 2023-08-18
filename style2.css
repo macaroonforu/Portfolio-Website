@@ -1,0 +1,319 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.section-title{
+    text-align: center; 
+}
+/*Begin CSS for responsive navbar*/ 
+:root {
+    --navbar-bg-color: hsl(0, 0%, 15%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1000px;
+    padding: 0 1.4rem;
+    margin: 0 auto;
+  }
+  #navbar {
+    --navbar-height: 64px;
+    position: fixed;
+    height: var(--navbar-height);
+    background-color: var(--navbar-bg-color);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1; 
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  .navbar-item {
+    margin: 0.4em;
+    width: 100%;
+  }
+  
+  .home-link,
+  .navbar-link {
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+  }
+  
+  .home-link:is(:focus, :hover) {
+    color: var(--navbar-text-color-focus);
+  }
+  
+  .navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+  }
+  
+  .navbar-link:is(:focus, :hover) {
+    color: var(--navbar-text-color-focus);
+    background-color: var(--navbar-bg-contrast);
+  }
+  .navbar-logo {
+    background-color: var(--navbar-text-color-focus);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-inline-start: 0.5em;
+  }
+  #navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: var(--navbar-text-color);
+  }
+  
+  #navbar-toggle:is(:focus, :hover) .icon-bar {
+    background-color: var(--navbar-text-color-focus);
+  }
+  #navbar-toggle[aria-expanded='true'] .icon-bar:is(:first-child, :last-child) {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+  }
+  
+  #navbar-toggle[aria-expanded='true'] .icon-bar:first-child {
+    transform: rotate(45deg);
+  }
+  
+  #navbar-toggle[aria-expanded='true'] .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #navbar-toggle[aria-expanded='true'] .icon-bar:last-child {
+    transform: rotate(-45deg);
+  }
+  #navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+  }
+  #navbar-toggle[aria-expanded='true'] + #navbar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar-links {
+    list-style: none;
+    position: absolute;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
+    padding: 1em;
+  }
+  @media screen and (min-width: 700px) {
+    #navbar-toggle,
+    #navbar-toggle[aria-expanded='true'] {
+      display: none;
+    }
+  
+    #navbar-menu,
+    #navbar-toggle[aria-expanded='true'] + #navbar-menu {
+      visibility: visible;
+      opacity: 1;
+      position: static;
+      display: block;
+      height: 100%;
+    }
+  
+    .navbar-links,
+    #navbar-toggle[aria-expanded='true'] + #navbar-menu .navbar-links {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+  }
+/*End CSS for responsive navbar*/ 
+
+
+#home{
+    min-height: 100vh; 
+}
+
+
+/*Begin CSS for Hero Section */ 
+.hero{
+    padding-top: 64px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+/*End CSS for Hero Section*/ 
+
+
+
+/*Begin CSS for about section*/ 
+#about{
+    min-height: 50vh; 
+    padding-top: 300px; 
+    padding-bottom: 350px;
+}
+
+/*End CSS for about section*/ 
+
+/*Begin CSS for skills section*/
+#skills{
+    min-height: 50vh; 
+    padding-top: 300px; 
+    padding-bottom: 300px;
+    margin-left: 25px; 
+    margin-right: 25px;   
+}
+.skilldiv{ 
+    margin-left: 10px; 
+    border-radius: 10px; 
+    text-align: center; 
+    min-height: 50vh;    
+}
+.skill-house{
+    display: flex; 
+    justify-content: center;
+    gap: 50px; 
+ 
+}
+.skill-type{
+    flex: 1; 
+    border: 2px solid black; 
+    min-height: 50vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;  
+}
+.skill-type-title{
+    text-align: center; 
+}
+.skill-list li{
+    list-style: none; 
+}
+@media screen and (max-width: 700px) {
+    .skill-house{
+        flex-direction: column; 
+    }
+
+  }
+
+/*End CSS for skills section*/ 
+
+/*Begin CSS for Project Section*/ 
+#projects{
+    min-height: 100vh; 
+    padding-bottom: 50px; 
+    padding-top: 100px;
+    margin-left: 25px; 
+    margin-right: 25px; 
+}
+.individual-project-title{
+    text-align: center; 
+}
+.projectdiv{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;   
+    margin-left: 10px;
+}
+
+.individual-project-container{
+    border: 2px solid black; 
+    display: flex;
+    border-radius: 20px; 
+    flex-basis: 700px; 
+    height: 300px; 
+}
+
+.project-image-content{
+    flex: 40%;  
+    position: relative; 
+    padding: 5px; 
+    margin: 10px; 
+}
+
+.project-image{
+    float: right; 
+    max-width: 100%; 
+    max-height: 100%;  
+}
+
+.project-text-content{
+    flex: 60%; 
+    margin: 10px; 
+}
+@media screen and (max-width: 700px) {
+    .projectdiv{
+        flex-direction: column; 
+    }
+    .individual-project-container{
+        flex-direction: column;
+    }
+    .project-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        float: none; 
+    }
+
+  }
+
+/*End CSS for project section*/ 
