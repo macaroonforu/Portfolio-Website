@@ -49,7 +49,7 @@
             <p>My name is Claire, welcome to my website.</p>
 
             <div class="hero-btns">
-                <button><a href="#about" class="about" id="about-btn">About me</a></button>
+                <button><a href="#about" class="about " id="about-btn">About me</a></button>
                 <button>   <a href="#projects" class="projects-btn" id="projects-btn">Projects</a></button>
             </div>
 
@@ -69,8 +69,20 @@
     <!--Second Component of my website: About me section-->
     <section id="about">
         <div class="aboutdiv">
-            <h1 class="section-title">About Me</h1>
-        </div>
+            <h1 class="section-title about-text">About Me</h1>
+            <p class='about-text'>
+                
+            I am a third year computer engineering student, with a passion for web-development.</br></br> 
+
+            Some of my favourite things are.. nature and outdoors: bodies of water and the feeling of grass, trails and farms, animals, health and fitness. </br></br> 
+
+            Previously, I was very fortunate to participate in some artistic hobbies, such as playing the flute, and competing in synchronized swimming. When I was good at my hobbies, I really liked to teach other people and did so through tutoring in music and science subjects at my highschool as well as volunteering in coaching introductory
+            synchronized swimming programs for younger children. </br></br> 
+            
+            
+            I am extremely grateful to be studying computer engineering and find what I am learning in school to be extremely fascinating and interesting. I have most enjoyed learning about computer hardware and machine learning
+            /artificial intelligence. I am grateful to be studying a subject that gives me the tools and knowledge to create things from scratch.</p>
+            </div>
     </section>
 
 
@@ -90,9 +102,9 @@
             <div class="skill-house">
                 <div class="skill-type">
                     <h2 class="skill-type-title">Web Development</h2>
-                       <p> <span class="iconify" data-icon="logos:javascript" data-inline="false"></span>        JavasScript</p>
-                       <p> <span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span>        HTML</p>
-                       <p> <span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>        CSS</p>
+                       <p><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>        JavasScript</p>
+                       <p><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span>        HTML</p>
+                       <p><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>        CSS</p>
                        <p><span class="iconify" data-icon="vscode-icons:file-type-php" data-inline="false"></span>        PHP</p>
                        <p><span class="iconify" data-icon="devicon:react" data-inline="false"></span>        React</p>
                 </div>
@@ -130,29 +142,49 @@
     <section id="projects">
         <h1 class="section-title">Projects</h1>
         <div class="projectdiv">
-            <div class="individual-project-container">
-                <div class="project-text-content">
-                    <h2 class="individual-project-title">CRUD Application</h2>
-                    <p>My crud application developed using EXPRESS, </p>
-                </div>
-                <div class="project-image-content">
-                    <img class="project-image" src="./projects/OIP.jpg">
-                </div>
-            </div>
+
+           
+
             <div class="individual-project-container">
                 <div class="project-text-content">
                     <h2 class="individual-project-title">Tic-Tac-Toe</h2>
                     <p>A tic-tac-toe game written in vanilla javascript </p>
+                    <a href="https://github.com/macaroonforu/tic-tac-toe" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://tic-tac-toe-chi-seven.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>        JavasScript</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span>        HTML</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>        CSS</p>
                 </div>
                 <div class="project-image-content">
                     <img class="project-image" src="./projects/ttt.png">
+                </div>
+            </div>
+            <div class="individual-project-container">
+                <div class="project-text-content">
+                    <h2 class="individual-project-title">CRUD Application</h2>
+                    <p>My crud application developed using EXPRESS, Mongo DB, Pug templating engine. It was deployed with railway. </p>
+                    <a href="https://github.com/macaroonforu/CV-Maker" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://cv-application2.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-mongo" data-inline="false"></span>MongoDB</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-pug" data-inline="false"></span>Pug</p>
+                    <p><span class="iconify" data-icon="skill-icons:expressjs-light" data-inline="false"></span>Express</p>
+                </div>
+                <div class="project-image-content">
+                    <img class="project-image" src="./projects/OIP.jpg">
                 </div>
             </div>
 
             <div class="individual-project-container">
                 <div class="project-text-content">
                     <h2 class="individual-project-title">Local Library</h2>
-                    <p>A library app written with vanilla javascript.</p>
+                    <p>A library app written with vanilla javascript. When a user adds a book, it is saved to local storage, 
+                        the books can also be deleted, and the option to toggle the book's status between read and not-read. 
+                    </p>
+                    <a href="https://github.com/macaroonforu/Interactive-Library" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://interactive-library.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>        JavasScript</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span>        HTML</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>        CSS</p>
                 </div>
                 <div class="project-image-content">
                     <img class="project-image" src="./projects/library.png">
@@ -163,6 +195,11 @@
                 <div class="project-text-content">
                     <h2 class="individual-project-title">Rock Paper Scissors</h2>
                     <p>A Rock-Paper-Scissors game written in Vanilla javascript.</p>
+                    <a href="https://github.com/macaroonforu/rock-paper-scissors" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://rock-paper-scissors-six-jade.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="logos:javascript" data-inline="false"></span>        JavasScript</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span>        HTML</p>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>        CSS</p>
                 </div>
                 <div class="project-image-content">
                     <img class="project-image" src="./projects/rps.png">
@@ -171,8 +208,13 @@
 
             <div class="individual-project-container">
                 <div class="project-text-content">
-                    <h2 class="individual-project-title">BASH Script</h2>
-                    <p>My crud application developed using EXPRESS, </p>
+                    <h2 class="individual-project-title">Web-Scraping Shell Script</h2>
+                    <p>A web-scraping shell-script that parses html on a webpage according to a known content organization, 
+                        extract relevant information, then inserts it into a locally hosted mySQL database on the user's computer.
+                    </p>
+                    <a href="https://github.com/macaroonforu/Web-Scraping-Shell-Script" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://cv-application2.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="mdi:bash" data-inline="false"></span>        BASH</p>
                 </div>
                 <div class="project-image-content">
                     <img class="project-image" src="./projects/OIP.jpg">
@@ -182,12 +224,28 @@
             <div class="individual-project-container">
                 <div class="project-text-content">
                     <h2 class="individual-project-title">CV Maker</h2>
-                    <p>A CV maker made using React. </p>
+                    <p>A CV maker made using React. Users can add personal information, an objective, and have the option to 
+                        create, update, and delete educations/experiences.</p>
                     <a href="https://github.com/macaroonforu/CV-Maker" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
                     <a href="https://cv-application2.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="devicon:react" data-inline="false"></span>        React</p>
                 </div>
                 <div class="project-image-content">
                     <img class="project-image" src="./projects/CV.png">
+                </div>
+            </div>
+            <div class="individual-project-container">
+                <div class="project-text-content">
+                    <h2 class="individual-project-title">Webpage Screenshotting Service</h2>
+                    <p>A PHP script that will take a link the user provides, then call upon a program installed on my local apache server to screenshot the website pointed to by that link
+                        and return the image to the user. 
+                    </p>
+                    <a href="https://github.com/macaroonforu/Webpage-Screenshoting-Service" class="github">Source Code<i class="fi-xnsuxl-github-alt"></i></a>
+                    <a href="https://cv-application2.vercel.app/" class="github">Deployment<i class="fi-xnsuxl-github-alt"></i></a>
+                    <p><span class="iconify" data-icon="vscode-icons:file-type-php" data-inline="false"></span>        PHP</p>
+                </div>
+                <div class="project-image-content">
+                    <img class="project-image" src="./projects/OIP.jpg">
                 </div>
             </div>
         </div>
