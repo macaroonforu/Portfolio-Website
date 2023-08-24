@@ -346,8 +346,8 @@
 #projects{
     min-height: 100vh; 
     padding: 100px 25px 0px 25px; 
-    background: url("project.jpg");
-    background-size: cover;
+    /*background: url("project.jpg");
+    background-size: cover;*/
 }
 .individual-project-title{
     text-align: center; 
