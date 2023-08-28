@@ -402,7 +402,6 @@
     }
     .individual-project-container{
         flex-direction: column;
-        max-height: none; 
         align-items: center; 
     }
     .project-image{
