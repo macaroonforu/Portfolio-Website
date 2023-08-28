@@ -365,24 +365,21 @@
     border-radius: 20px; 
     min-height: 300px; 
     display: flex; 
-    width: 100%; 
-   
+    width: 100%;  
 }
 
 .project-image-content{ 
-    position: relative; 
+    position: relative;
+    margin: auto; 
     padding: 0px 20px 0px 20px; 
-    
-
 }
 
 
 .project-image{
     float: right; 
-    height: 100%; 
+    vertical-align: middle;  
     width: 100%;
     object-fit: contain; 
- 
 }
 .project-link{
   text-decoration: none; 
@@ -395,6 +392,7 @@
 .project-text-content{
     flex: 60%; 
     margin: 10px; 
+    padding-bottom: 10px; 
     word-wrap:  break-word; 
 }
 @media screen and (max-width: 700px) {
