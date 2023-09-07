@@ -1,1 +1,0 @@
-The header needs to have a socials thing: an about me, and a navbar. 
