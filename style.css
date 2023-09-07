@@ -237,8 +237,8 @@
     align-items: center; 
     flex-direction: column; 
     min-height: 100vh;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: rgb(173,253,162);
+    background: radial-gradient(circle, rgba(173,253,162,1) 0%, rgba(17,211,243,1) 49%, rgba(248,225,108,1) 100%);
     /*background: url("back.jpg"); 
     background-size: 100vw 100vh; */
 }
@@ -413,8 +413,8 @@
 #skills{
   min-height: 100vh; 
   padding: 100px 25px 100px 25px; 
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: rgb(112,222,182);
+background: linear-gradient(90deg, rgba(112,222,182,1) 0%, rgba(129,223,91,1) 53%, rgba(84,215,167,1) 99%);
   /*background: url("skills.jpg");
   background-size: cover;  */ 
 }
@@ -471,8 +471,8 @@
 #projects{
     min-height: 100vh; 
     padding: 100px 25px 0px 25px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(252,228,216);
+background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 49%, rgba(251,214,127,1) 86%);
     /*background: url("project.jpg");
     background-size: cover;*/
 }
