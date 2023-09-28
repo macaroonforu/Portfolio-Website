@@ -555,11 +555,12 @@ background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 4
 
 /*BEGIN CSS FOR ECE295 PAGE*/
 .ece295name{
-  font-size: 4rem; 
+  font-size: 4em; 
   border-width: 2px; 
   text-transform: capitalize; 
   text-shadow: 1px 1px 1px hotpink, 3px -3px 3px black; 
-  color: white;
+  color: white; 
+  width: 80%; 
 
 }
 .ece295imgcontent{
@@ -579,6 +580,7 @@ background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 4
   align-items: center; 
   justify-content: center; 
   padding: 20px 10% 10% 5%; 
+  overflow: hidden;
 }
 
 .ece295link{
