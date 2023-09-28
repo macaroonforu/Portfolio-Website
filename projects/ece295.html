@@ -18,7 +18,7 @@
 
             <p>This project involved writing modules in System Verilog to handle the timing of receiving digital data from an ADC and converting it to paralell data, digitally processing the signals with finite-impulse response filters implemented in System Verilog, and then sending the signals back to a DAC to be output. As part of the design process, Altium Designer was used to 
             design a PCB that would interface the DAC/ADC with the DESoc MAX 10 FPGA we were using for the digital signal processing, then soldering the components of the PCB together. Matlab was used to determine proper filter coefficients that could be used to 
-            achieve our desired results, as well as predict the magnitude and impulse responses of the filters. We also wrote our own testbenches and evaluated the digital design using ModelSim when we were experiencing inconsitent results. Finally, both manual, and automated testing using oscilloscopes/DMMs and the PyVisa Library were used to debug and evaluate our design.</p>
+            achieve our desired results, as well as predict the magnitude and impulse responses of the filters. We also extended template testbenches that were provided to suit our needs and evaluated the digital design using ModelSim when we were experiencing inconsitent results. Finally, both manual, and automated testing using oscilloscopes/DMMs and the PyVisa Library were used to debug and evaluate our design.</p>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./DMM.jpg">
@@ -40,10 +40,10 @@
                 <p>Predicted magnitude response of a low-pass filter used in our design, via MatLab</p>
             </div>
 
-             <!--div class="ece295imgcontent">
+             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./tb.jpg">
-                <p>Waveform of our DSP system (ModelSim), based on specific inputs forced by a testbench that we wrote for debugging purposes</p>
-            </div-->
+                <p>Waveform of our DSP system (ModelSim), based on specific inputs forced by a testbench that we modified for debugging purposes</p>
+            </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./test.png">
