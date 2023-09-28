@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Demodulation System Images</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="projects ece295">
+            <h1 class="mainName section-title">Digital Demodulation System Information</h1>
+
+            <a class="project-link ece295link"  href="https://github.com/macaroonforu/Subsystem-B" class="github">Source Code  </a>
+
+            <p>This project involved writing modules in System Verilog to handle the timing of receiving digital data from an ADC and converting it to paralell data, digitally processing the signals with a finite-impulse response filter, and then sending the signals back to a DAC to be output. As part of the design process, Altium Designer was used to 
+            design a PCB that would interface the DAC/ADC with the DESoc MAX 10 FPGA we were using for the digital signal processing, then soldering the components of the PCB together. Matlab was used to determine proper filter coefficients that could be used to 
+            achieve our desired results, as well as predict the impulse response of the filter. We also wrote our own testbenches and evaluated the digital design using ModelSim when we were experiencing inconsitent results, and finally, both manual, and automated testing using oscilloscopes/DMMs and the PyVisa Library were used to debug and evaluate our design.</p>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./DMM.jpg">
+                <p>Generating a test AM signal, demodulating it with our device, and reading the output on an ossiloscope</p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./blockdiagram.png">
+                <p>Block Diagram of the DSP component of our design, generated using SimuLink</p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./pcb.png">
+                <p>PCB layout of our design in ALtium Designer </p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./mr.png">
+                <p>Predicted magnitude response of a low-pass filter used in our design, via MatLab</p>
+            </div>
+
+             <div class="ece295imgcontent">
+                <img class="ece295-img" src="./tb.jpg">
+                <p>Waveform of our DSP system (MultiSim), based on specific inputs forced by a testbench that we wrote for debugging purposes</p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./test.png">
+                <p>Sideband rejection ratio of our design, evaluated using automated testing through Python with the PyVisa library</p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./closeup.png">
+                <p>A closer look at the design</p>
+            </div>
+   
+  
+
+    </div>  
+</body>
+</html>

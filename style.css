@@ -468,10 +468,15 @@ background: linear-gradient(90deg, rgba(112,222,182,1) 0%, rgba(129,223,91,1) 53
 
 
 /*Begin CSS for Project Section*/ 
+
 #projects{
+  padding: 100px 25px 0px 25px;
+
+}
+#projects, .projects{
     min-height: 100vh; 
-    padding: 100px 25px 0px 25px;
-    background: rgb(252,228,216);
+    
+   /* background: rgb(252,228,216);*/
 background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 49%, rgba(251,214,127,1) 86%);
     /*background: url("project.jpg");
     background-size: cover;*/
@@ -519,7 +524,8 @@ background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 4
 }
 .project-link{
   text-decoration: underline; 
-  color:hsl(224, 71%, 46%);  
+  color:hsl(224, 71%, 46%); 
+  margin: 5px;  
 }
 .project-link:hover{
   text-decoration: underline wavy; 
@@ -546,3 +552,30 @@ background: radial-gradient(circle, rgba(252,228,216,1) 0%, rgba(245,219,89,1) 4
 
   }
 /*End CSS for project section*/ 
+
+/*BEGIN CSS FOR ECE295 PAGE*/
+.ece295imgcontent{
+  text-align: center; 
+  width: 80%; 
+  margin: 30px 0px 30px 0px; 
+}
+.ece295-img{
+  width: 100%; 
+  object-fit: contain; 
+  
+}
+
+.ece295{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px 10% 10% 5%; 
+}
+
+.ece295link{
+  font-size: 30px;  
+}
+
+
+/*END CSS FOR ECE295 PAGE*/ 
