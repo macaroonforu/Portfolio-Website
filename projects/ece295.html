@@ -13,18 +13,22 @@
 <body>
         <div class="projects ece295">
             <h1 class="ece295name section-title">Digital Demodulation System Information</h1>
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./closeup.png">
+                <p>A closer look</p>
+            </div>
 
 
 
             <div class="ece295imgcontent">
-                <img class="ece295-img" src="./closeup.png">
+                <img class="ece295-img" src="./dac.jpg">
                 <p>This project involved writing modules in System Verilog to handle the timing of receiving serial digital data from an ADC and converting it to parallel data, digitally processing the signals with finite-impulse response filters implemented in System Verilog, and then converting the parallel data back to serial data that could be sent back to a DAC to be output. </p>
             </div>
 
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./blockdiagram.png">
-                <p>Block Diagram of the DSP component of our design, generated using SimuLink, which helped us visualize the steps we would take.</p>
+                <p>Block Diagram of the DSP component of our design, generated using Simulink, which helped us visualize the steps we would take.</p>
             </div>
 
             <div class="ece295imgcontent">
@@ -35,22 +39,33 @@
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./mr.png">
-                <p> Matlab was used to determine proper filter coefficients that could be used to achieve our desired results, as well as predict the magnitude and impulse responses of the filters as a measure of their efficacy.</p>
+                <p> Matlab was used to determine proper filter coefficients that could be used to achieve our desired results, as well as to predict the magnitude and impulse responses of the filters as a measure of their efficacy.</p>
             </div>
 
              <div class="ece295imgcontent">
-                <img class="ece295-img" src="./tb.jpg">
-                <p>                    We also extended template testbenches that were provided to suit our needs and evaluated the digital design using ModelSim when we were experiencing inconsistent results. This Waveform of our DSP system (ModelSim), is based on specific inputs forced by a testbench that we modified for debugging purposes.</p>
+                <img class="ece295-img" src="./sim.jpg">
+                <p>We also extended template testbenches that were provided to suit our needs and evaluated the digital design using ModelSim 
+                    when we were experiencing inconsistent results. This Waveform of our DSP system, is based on specific inputs forced by a 
+                    testbench that we modified for debugging purposes when we encountered a situation where our filters appeared to be 
+                    working fine in simulation, but on hardware, failed to sufficiently attenuate the RF signals. We attempted to simulate our 
+                    pipeline using ModelSim, then hand-calculated a few outputs of what we believed should have been output by the FIR filter system, 
+                    and compared them to the values that the simulation was showing. We eventually realized that our inconsistensies were due to 
+                    timing issues that were not reflected in simulation but eventually revealed themselves in our design's failure post-synthesis, 
+                    which was a very valuable lesson.</p>
             </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./DMM.jpg">
-                <p>Frequent manual testing using laboratory instrumentation such as waveform generators/oscilloscopes/DMMs were used to debug and evaluate our design. For example. generating a test AM signal, demodulating it with our device, and reading the output on an oscilloscope.</p>
+                <p>Frequent manual testing using laboratory instrumentation such as waveform generators, oscilloscopes, and DMMs was used to debug and evaluate our design. 
+                    For example. generating a test AM signal, demodulating it with our device, and reading the output on an oscilloscope.</p>
             </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./ssb.jpg">
-                <p>Eventually, automated testing helped us evaluate our final design, for example, the sideband rejection ratio of our design. The PyVISA library was used to connect to measurement instruments, which controlled stimuli (eg: generating signals of varying amplitudes and frequencies on the waveform generator), then read the output from our system based on signals sensed by the oscilloscope. The collected data was graphed using the Matplotlib library.</p>
+                <p>Eventually, automated testing helped us evaluate our final design, for example, sideband rejection ratio as a measure of success.
+                     The PyVISA library was used to connect to measurement instruments. The program then controlled stimuli (eg: generating signals of varying amplitudes and frequencies on the waveform generator), 
+                     then read the output from our system based on signals sensed by the oscilloscope. Computations were performed on the collected data 
+                     to determine the sideband rejection ratio, which was eventually plotted againt the frequencies of the input signals using the Matplotlib library.</p>
             </div>
 
         
