@@ -14,46 +14,46 @@
         <div class="projects ece295">
             <h1 class="ece295name section-title">Digital Demodulation System Information</h1>
 
-            <a class="project-link ece295link"  href="https://github.com/macaroonforu/Subsystem-B" class="github">Source Code  </a>
 
-            <p>This project involved writing modules in System Verilog to handle the timing of receiving digital data from an ADC and converting it to parallel data, digitally processing the signals with finite-impulse response filters implemented in System Verilog, and then sending the signals back to a DAC to be output. As part of the design process, Altium Designer was used to 
-            design a PCB that would interface the DAC/ADC with the DESoc MAX 10 FPGA we were using for the digital signal processing, then soldering the components of the PCB together. Matlab was used to determine proper filter coefficients that could be used to 
-            achieve our desired results, as well as predict the magnitude and impulse responses of the filters. We also extended template testbenches that were provided to suit our needs and evaluated the digital design using ModelSim when we were experiencing inconsitent results. Finally, both manual, and automated testing using oscilloscopes/DMMs and the PyVisa Library were used to debug and evaluate our design.</p>
 
             <div class="ece295imgcontent">
-                <img class="ece295-img" src="./DMM.jpg">
-                <p>Generating a test AM signal, demodulating it with our device, and reading the output on an oscilloscope</p>
+                <img class="ece295-img" src="./closeup.png">
+                <p>This project involved writing modules in System Verilog to handle the timing of receiving serial digital data from an ADC and converting it to parallel data, digitally processing the signals with finite-impulse response filters implemented in System Verilog, and then converting the parallel data back to serial data that could be sent back to a DAC to be output. </p>
             </div>
+
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./blockdiagram.png">
-                <p>Block Diagram of the DSP component of our design, generated using SimuLink</p>
+                <p>Block Diagram of the DSP component of our design, generated using SimuLink, which helped us visualize the steps we would take.</p>
             </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./pcb.png">
-                <p>PCB layout of our design in Altium Designer </p>
+                <p>As part of the design process, Altium Designer was used to design a PCB that would interface the DAC/ADC with the DESoc MAX 10 FPGA we were using for the digital signal processing, which we eventually submitted to be manufactured, then 
+                    soldered our compontents to.</p>
             </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./mr.png">
-                <p>Predicted magnitude response of a low-pass filter used in our design, via MatLab</p>
+                <p> Matlab was used to determine proper filter coefficients that could be used to achieve our desired results, as well as predict the magnitude and impulse responses of the filters as a measure of their efficacy.</p>
             </div>
 
              <div class="ece295imgcontent">
                 <img class="ece295-img" src="./tb.jpg">
-                <p>Waveform of our DSP system (ModelSim), based on specific inputs forced by a testbench that we modified for debugging purposes</p>
+                <p>                    We also extended template testbenches that were provided to suit our needs and evaluated the digital design using ModelSim when we were experiencing inconsistent results. This Waveform of our DSP system (ModelSim), is based on specific inputs forced by a testbench that we modified for debugging purposes.</p>
+            </div>
+
+            <div class="ece295imgcontent">
+                <img class="ece295-img" src="./DMM.jpg">
+                <p>Frequent manual testing using laboratory instrumentation such as waveform generators/oscilloscopes/DMMs were used to debug and evaluate our design. For example. generating a test AM signal, demodulating it with our device, and reading the output on an oscilloscope.</p>
             </div>
 
             <div class="ece295imgcontent">
                 <img class="ece295-img" src="./test.png">
-                <p>Sideband rejection ratio of our design, evaluated using automated testing through Python with the PyVisa library</p>
+                <p>Eventually, automated testing helped us evaluate our final design, for example, the sideband rejection ratio of our design. The PyVisa library was used to connect to measurement instruments, which controlled stimuli (eg: generating signals of varying amplitudes and frequencies on the waveform generator), then read the output from our system based on signals sensed by the oscilloscope. The collected data was graphed using the Matplotlib library.</p>
             </div>
 
-            <div class="ece295imgcontent">
-                <img class="ece295-img" src="./closeup.png">
-                <p>A closer look at the design</p>
-            </div>
+        
    
   
 
