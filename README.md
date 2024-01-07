@@ -13,4 +13,5 @@
 
 My portfolio website for displaying all of my projects and skills in one convenient location. 
 
-![image](https://github.com/macaroonforu/personal-website/assets/121368271/3b38055a-2a97-4420-bbf6-b5edcd50d096)
+![image](https://github.com/macaroonforu/Portfolio-Website/assets/121368271/2b91fefe-7ad5-4fe9-9eba-d66ca143e8be)
+
